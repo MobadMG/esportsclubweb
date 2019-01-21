@@ -1,0 +1,143 @@
+/*!
+Theme Name: TM7200
+Template Theme URI:
+Author: Adriel Mora, Clara Madrigal
+Description: Tema del curso Desarrollo Rapido de Aplicaciones
+Version: 1.0
+License: GNU General Public Licebse v2
+*/
+
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+.background{
+    background-color: #1A1A1A;
+    color: #fff;
+    
+    
+}
+
+nav{
+    z-index: 2;
+    font-size: 1.5rem;
+   
+}
+
+
+.backgroundTwo{
+    background-color: #E04310;
+    color: #fff;
+}
+
+.backgroundThree{
+    background-color: #D32E0E;
+    color: #fff;
+}
+
+.backgroundFour{
+    background-color: #C61A0B;
+    color: #fff;
+}
+
+.backgroundFive{
+    background-color: #550208;
+    color: #fff;
+}
+
+.backgroundFooter{
+    background-color: #0A0A0A;
+    color: #fff;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+}
+
+.iconsSM{
+    font-size: 50px;
+   
+}
+
+h1{
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    top: 60%;
+    color: #fff;
+    z-index: 1;
+}
+
+.fontSize{
+    font-size: 6.5rem;
+}
+
+
+p{
+    font-size: 1.5rem;
+}
+
+img{
+    width: 100%;
+}
+
+.imgParallax{
+    background-image: url(assets/images/contactInfinity.jpg);
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+	width: 100%;
+    height: 700px;
+    opacity: 0.5;
+    
+}
+
+.contactForm{
+    width: 90%;
+}
+
+
+.input{
+    background-color: #4D4D4D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+}
+
+.button{
+    background-color: #E04310;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10%;
+}
+
+.imgButton{
+    opacity: 0.5;
+}
+
+.txtButton{
+    margin: 25%;
+    position: absolute;
+    z-index: 1;
+}
+
+.footerLogo{
+    width: 25%;
+}
+
+
+#map{
+    width: 100%;
+    height: 754px;
+}
