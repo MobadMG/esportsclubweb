@@ -26,17 +26,17 @@
         ?>
     </div>
 
-	<div class="row w-50 m-auto m-3">
-		<div class="col-lg-3 col-sm-6 col-6 iconsSM">
+	<div class="row w-50 m-auto ">
+		<div class=" col-3 iconsSM m-auto">
 			<i class="fa fa-facebook-square "></i>
 		</div>
-		<div class="col-lg-3 col-sm-6 col-6 iconsSM">
+		<div class=" col-3 iconsSM m-auto">
 			<i class="fa fa-twitter"></i>
 		</div>
-		<div class="col-lg-3 col-sm-6 col-6 iconsSM">
+		<div class=" col-3 iconsSM m-auto">
 			<i class="fa fa-instagram"></i>
 		</div>
-		<div class="col-lg-3 col-sm-6 col-6 iconsSM">
+		<div class=" col-3 iconsSM m-auto">
 			<i class="fa fa-twitch"></i>
 		</div>
 	</div>
@@ -58,6 +58,6 @@
 </footer>
 
 <?php wp_footer(); ?>
-
+</div>
 </body>
 </html>

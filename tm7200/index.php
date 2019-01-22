@@ -46,22 +46,22 @@
 		</div>
 	</div>
 
-	<div class="row mt-5 p-auto">
-		<div class="col-lg-4 col-md-4 col-xs-12 backgroundTwo p-5">
-			<div class="row w-100 m-auto">
-				<div class="col-4">
-					<img class="m-auto" src="<?php bloginfo('template_directory');?>/assets/images/check-circle.png"/>
+	<div class="row mt-5 ">
+		<div class="col-lg-4 col-md-12 col-sm-12 col-12 backgroundTwo p-5">
+			<div class="row  m-auto">
+				<div class="col-4 m-auto">
+					<img class="" src="<?php bloginfo('template_directory');?>/assets/images/check-circle.png"/>
 				</div>
 
 				<div class="col-8 m-auto">
-					<p class="m-auto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+					<p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="col-lg-4 col-md-4 col-xs-12 backgroundThree p-5">
-			<div class="row w-100 m-auto">
-				<div class="col-4">
+		<div class="col-lg-4 col-md-12 col-sm-12 col-12 backgroundThree p-5">
+			<div class="row m-auto">
+				<div class="col-4 m-auto">
 					<img  src="<?php bloginfo('template_directory');?>/assets/images/check-circle.png"/>
 				</div>
 
@@ -71,10 +71,10 @@
 			</div>
 		</div>
 
-		<div class="col-lg-4 col-md-4 col-xs-12 backgroundFour p-5">
-			<div class="row w-100 m-auto">
-				<div class="col-4">
-					<img class="m-auto" src="<?php bloginfo('template_directory');?>/assets/images/check-circle.png"/>
+		<div class="col-lg-4 col-md-12 col-sm-12 col-12 backgroundFour p-5">
+			<div class="row m-auto">
+				<div class="col-4 m-auto">
+					<img class="" src="<?php bloginfo('template_directory');?>/assets/images/check-circle.png"/>
 				</div>
 
 				<div class="col-8 m-auto">
@@ -102,13 +102,13 @@
 
 	<div class="">
 
-		<div class="txtButton text-center ">
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+		<div class="txtButton text-center">
+			<p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
 			<input name="" id="" class="button" type="button" value="Be one of Us">
 		</div>
 
-		<div class="w-75 m-auto p-5 ">
-			<img class="img-fluid imgButton" src="<?php bloginfo('template_directory');?>/assets/images/loveTeam.jpg"/>
+		<div class=" p-5 text-center">
+			<img class="img-fluid imgButton w-75" src="<?php bloginfo('template_directory');?>/assets/images/loveTeam.jpg"/>
 		</div>
 		
 		
