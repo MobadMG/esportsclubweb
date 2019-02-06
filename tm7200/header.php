@@ -13,7 +13,7 @@
 	                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 		                <span class="navbar-toggler-icon"></span>
 	                </button>
-	                <a class="navbar-brand" href="#"><img class="m-auto w-75" src="<?php bloginfo('template_directory');?>/assets/images/logo2.png"/></a>
+	                <a class="navbar-brand" href="home"><img class="m-auto w-75" src="<?php bloginfo('template_directory');?>/assets/images/logo2.png"/></a>
                     <?php
                     wp_nav_menu( array(
                         'theme_location'    => 'primary',

@@ -1,5 +1,5 @@
 
-<footer>
+<footer class="backgroundBlack">
 	<div class="backgroundFooter p-5">
 
 	<div class=" p-5 m-auto text-center">
@@ -40,7 +40,6 @@
 			<i class="fa fa-twitch"></i>
 		</div>
 	</div>
-	
 
 	</div>
 

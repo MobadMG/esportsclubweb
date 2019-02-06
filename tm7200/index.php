@@ -14,7 +14,7 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="d-block w-100" src="<?php bloginfo('template_directory');?>/assets/images/2019.jpg"/>
+				<img class="d-block w-100" src="<?php bloginfo('template_directory');?>/assets/images/2019.jpg"/>
 				</div>
 				<div class="carousel-item">
 					<img class="d-block w-100" src="<?php bloginfo('template_directory');?>/assets/images/AllTeam2.png"/>
@@ -29,19 +29,19 @@
 
 
 	<div class="row p-5">
-		<div class="col-lg-3 col-md-6 col-xs-6">
+		<div class="col-lg-3 col-md-3 col-xs-6">
 			<img class="m-auto" src="<?php bloginfo('template_directory');?>/assets/images/lolLogo.png"/>
 		</div>
 
-		<div class="col-lg-3 col-md-6 col-xs-6">
+		<div class="col-lg-3 col-md-3 col-xs-6">
 			<img class="m-auto" src="<?php bloginfo('template_directory');?>/assets/images/CSGO-logo.png"/>
 		</div>
 
-		<div class="col-lg-3 col-md-6 col-xs-6">
+		<div class="col-lg-3 col-md-3 col-xs-6">
 			<img class="m-auto" src="<?php bloginfo('template_directory');?>/assets/images/blackOps.png"/>
 		</div>
 
-		<div class="col-lg-3 col-md-6 col-xs-6">
+		<div class="col-lg-3 col-md-3 col-xs-6">
 			<img class="m-auto" src="<?php bloginfo('template_directory');?>/assets/images/Logo-starcraft2.png"/>
 		</div>
 	</div>

@@ -13,7 +13,6 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    
 }
 
 .allContent{
@@ -25,14 +24,12 @@ body{
 .background{
     background-color: #1A1A1A;
     color: #fff;
-    margin: 0;
-    
+    margin: 0; 
 }
 
 nav{
     z-index: 2;
-    font-size: 1.6rem;
-   
+    font-size: 1.6rem; 
 }
 
 
@@ -61,7 +58,7 @@ nav{
     color: #fff;
 }
 
-footer{
+.backgroundBlack{
     background-color: #000;
     color: #fff;
 }
@@ -71,16 +68,37 @@ footer{
    
 }
 
+.iconsSMPlayers{
+    font-size: 2rem;
+}
+
+.iconsSM:hover, .iconsSMPlayers:hover{
+    color: #C61A0B;
+    transition: 0.5s;
+}
+
+.sMPlayers{
+    bottom: 0%;
+    position: absolute;
+}
+
 h1{
     width: 100%;
-    position: absolute;
     color: #fff;
+}
+
+.fontSizeh2{
+    font-size: 2.5rem;
+}
+
+.posAbsolute{
+    position: absolute;
     z-index: 1;
+    margin-top: 20%;
 }
 
 .fontSize{
     font-size: 6.5rem;
-    margin-top: 20%;
 }
 
 p{
@@ -92,7 +110,7 @@ img{
 }
 
 .imgParallax{
-    background-image: url(assets/images/contactInfinity.jpg);
+    
 	background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -101,8 +119,24 @@ img{
 	width: 100%;
     height: 700px;
     opacity: 0.5;
-    
 }
+
+.parallaxContact{
+    background-image: url(assets/images/contactInfinity.jpg);
+}
+
+.parallaxAbout{
+    background-image: url(assets/images/AllTeam2.png);
+}
+
+.parallaxTeams{
+    background-image: url(assets/images/teamPlayers4.jpg);   
+}
+
+.parallaxJoin{
+    background-image: url(assets/images/loveTeam.jpg);
+}
+
 
 .contactForm{
     width: 90%;
@@ -128,6 +162,15 @@ img{
     font-size: 2rem;
 }
 
+.button:hover{
+    background-color: #C61A0B;
+    transition: 0.5s;
+}
+
+.btnTeams{
+    width: 30%;
+}
+
 .imgButton{
     opacity: 0.5;
 }
@@ -147,3 +190,15 @@ img{
     width: 100%;
     height: 754px;
 }
+
+.linkHome{
+    color: #E04310;
+    
+}
+
+.linkHome:hover{
+    color: #C61A0B;
+    text-decoration: none;
+}
+
+
