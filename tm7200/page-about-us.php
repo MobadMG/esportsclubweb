@@ -4,32 +4,39 @@
     get_header();
 
 ?>
+
+<?php 
+	if (have_posts()) : 
+	while (have_posts()) : the_post(); ?>
+
+    
 <div class="background">
 
-    <h1 class="text-center fontSize posAbsolute">About Us</h1>
+    <h1 class="text-center fontSize posAbsolute"><?php the_title(); ?></h1>
 
     <div class="imgParallax parallaxAbout">
 
     </div>
 
-    <div class="w-75 m-auto pt-5">
-        <h2 class="text-center p-3 fontSizeh2">Lorem ipsum dolor sit amet, consectetuer adi</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-         Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+
+    <?php
+	$mypages = get_pages( array( 'child_of' => 5, 'sort_column' => 'post_date', 'sort_order' => 'asc' ) );
+
+	foreach( $mypages as $page ) {		
+		$content = $page->post_content;
+
+	?>    
+    <div class="w-75 m-auto pt-5 pText">
+        <h2 class="text-center p-3 fontSizeh2"><?php echo $page->post_title; ?></h2>
+        <p class=""><?php echo $page->post_content; ?></p>
+        
     </div>
-
-    <img class="pt-5" src="<?php bloginfo('template_directory');?>/assets/images/teamPlayers2.jpg"/>
-
-    <div class="w-75 m-auto pt-5">
-        <h2 class="text-center p-3 fontSizeh2">Lorem ipsum dolor sit amet, consectetuer adi</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-         Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+    <?php
     
-        <p class="w-75 m-auto p-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-         Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-    </div>
+        if ( has_post_thumbnail($page->ID) ) {
+            echo '<img class="pt-5 w-100 img-fluid" src="'.get_the_post_thumbnail($page->ID);
+        }    
+    } ?>
 
     <div class="row w-75 m-auto pt-5">
         <div class="col-8">
@@ -42,50 +49,35 @@
         </div>
     </div>
 
-    <div class="w-75 m-auto pt-5">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-         Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-
-         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-         Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+    <div class="w-75 m-auto pt-5 pText">
+          <p><?php the_content(); ?></p>
     </div>
 
     <div class="row w-75 m-auto pt-5 pb-5">
-        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-6">
-            <img src="<?php bloginfo('template_directory');?>/assets/images/coach1.jpg"/>
-            <p class="text-center">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adi</p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-6">
-            <img src="<?php bloginfo('template_directory');?>/assets/images/coach2.jpg"/>
-            <p class="text-center">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adi</p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-6">
-            <img src="<?php bloginfo('template_directory');?>/assets/images/coach3.jpg"/>
-            <p class="text-center">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adi</p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-6">
-            <img src="<?php bloginfo('template_directory');?>/assets/images/coach4.jpg"/>
-            <p class="text-center">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adi</p>
-        </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-6">
-            <img src="<?php bloginfo('template_directory');?>/assets/images/coach5.jpg"/>
-            <p class="text-center">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adi</p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-6">
-            <img src="<?php bloginfo('template_directory');?>/assets/images/coach6.jpg"/>
-            <p class="text-center">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adi</p>
-        </div>
+
+    <?php
+	$mypages = get_pages( array( 'child_of' => 165, 'sort_column' => 'post_date', 'sort_order' => 'asc' ) );
+
+	foreach( $mypages as $page ) {		
+		$content = $page->post_content;
+
+    ?>    
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-6">
+        <?php
+            echo '<img class="pt-5 w-100 img-fluid" src="'.get_the_post_thumbnail($page->ID);
+        ?>
+
+        <p class="text-center"><?php echo $page->post_title; ?></p>
+        <p><?php echo $page->post_content; ?></p>
+    </div>
+    <?php     
+    } 
+    ?>
     </div>
 </div>
 
-
-<?php
+<?php 	endwhile;
+			endif;
 
     get_footer();
 

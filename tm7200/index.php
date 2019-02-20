@@ -5,6 +5,7 @@
  ?>
 <div class="background">
 	
+<?php the_content(); ?>
 	<div>
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -29,21 +30,27 @@
 
 
 	<div class="row p-5">
-		<div class="col-lg-3 col-md-3 col-xs-6">
-			<img class="m-auto" src="<?php bloginfo('template_directory');?>/assets/images/lolLogo.png"/>
-		</div>
 
-		<div class="col-lg-3 col-md-3 col-xs-6">
-			<img class="m-auto" src="<?php bloginfo('template_directory');?>/assets/images/CSGO-logo.png"/>
-		</div>
+	<!--imgHomeGames-->
+	<?php
 
-		<div class="col-lg-3 col-md-3 col-xs-6">
-			<img class="m-auto" src="<?php bloginfo('template_directory');?>/assets/images/blackOps.png"/>
-		</div>
+	$args = array( 'numberposts' => '4',
+	'category' => '19',
+	'order' => 'asc');
 
+	$recent_posts = wp_get_recent_posts( $args );
+
+	foreach( $recent_posts as $recent ){
+
+	?>
 		<div class="col-lg-3 col-md-3 col-xs-6">
-			<img class="m-auto" src="<?php bloginfo('template_directory');?>/assets/images/Logo-starcraft2.png"/>
+		<?php
+		echo '<img class="m-auto w-100 img-fluid" src="'.get_the_post_thumbnail($recent["ID"]).'';
+		?>
 		</div>
+	<?php
+	} wp_reset_postdata();
+	?>
 	</div>
 
 	<div class="row mt-5 ">
@@ -84,19 +91,28 @@
 		</div>
 	</div>
 
-	<div class="backgroundFive">
+	<div class="backgroundFive p-5">
 		<div class="row w-75 m-auto ">
-			<div class="col-lg-4 col-md-4 col-xs-12 m-auto">
-				<img  src="<?php bloginfo('template_directory');?>/assets/images/AOClogo.png"/>
-			</div>
 
-			<div class="col-lg-4 col-md-4 col-xs-12 m-auto">
-				<img src="<?php bloginfo('template_directory');?>/assets/images/Hyperx-logo.png"/>
-			</div>
+		<?php
+        $args2 = array( 'numberposts' => '3',
+		'category' => '21',
+		'order' => 'asc');
+	
+		$recent_posts2 = wp_get_recent_posts( $args2 );
+	
+		foreach( $recent_posts2 as $recent2 ){
 
-			<div class="col-lg-4 col-md-4 col-xs-12 m-auto">
-				<img src="<?php bloginfo('template_directory');?>/assets/images/Logo_Razer.png"/>
+        ?>    
+        	<div class="col-lg-4 col-md-4 col-xs-12 m-auto">
+			<?php
+			echo '<img class="m-auto w-100 img-fluid" src="'.get_the_post_thumbnail($recent2["ID"]).'';
+			?>
 			</div>
+        <?php   
+        } ?> 
+			
+			
 		</div>
 	</div>
 

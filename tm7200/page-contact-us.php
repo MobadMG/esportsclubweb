@@ -8,7 +8,7 @@
 <div class="background">
 
 
-  <h1 class="text-center fontSize posAbsolute">Contact Us</h1>
+  <h1 class="text-center fontSize posAbsolute"><?php the_title(); ?></h1>
 
     <div class="imgParallax parallaxContact">
     
@@ -21,7 +21,7 @@
 
         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 m-auto">
 
-            <p class="mt-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis</p>
+            <p class="mt-5">Do you have any questions to ask, do you want to know more about us, do you have any opinion or message to give us? Contact us!</p>
 
             <div class="form-group text-white">
                 <input type="text" class=" input text-white" name="" id="" placeholder="Name">
@@ -41,8 +41,7 @@
 
 
     <div class="w-75 m-auto p-5">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation </p>
+        <p>Our offices and gaming house are in different places, here you can see where we are located if you want to contact us.</p>
     </div>
 
     <div class="m-auto p-5">

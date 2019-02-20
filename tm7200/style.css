@@ -79,8 +79,8 @@ h1 {
 .fontSize {
   font-size: 6.5rem; }
 
-p {
-  font-size: 2rem; }
+.pText, p {
+  font-size: 1.5rem; }
 
 img {
   width: 100%; }
@@ -106,6 +106,9 @@ img {
 
 .parallaxJoin {
   background-image: url(assets/images/loveTeam.jpg); }
+
+.parallaxPartners {
+  background-image: url(assets/images/partnerPrincipal.jpg); }
 
 .contactForm {
   width: 90%; }
@@ -156,3 +159,7 @@ img {
 .linkHome:hover {
   color: #C61A0B;
   text-decoration: none; }
+
+.JoinUsList {
+  list-style: none;
+  font-size: 1.5rem; }

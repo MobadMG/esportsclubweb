@@ -3,9 +3,13 @@
     get_header();
 
 ?>
+
+
+
+
 <div class="background">
 
-    <h1 class="text-center fontSize posAbsolute">Teams</h1>
+    <h1 class="text-center fontSize posAbsolute"><?php the_title(); ?></h1>
 
     <div class="imgParallax parallaxTeams">
 
@@ -43,37 +47,37 @@
         </div>
 
         <div class="row">
+
+
+        <?php
+            $mypages = get_pages( array( 'child_of' => 67, 'sort_column' => 'post_date', 'sort_order' => 'asc' ) );
+
+            foreach( $mypages as $page ) {		
+                $content = $page->post_content;
+
+            ?>    
             <div class="col-4 m-auto">
-                <img class="  p-3" src="<?php bloginfo('template_directory');?>/assets/images/playerArce.jpg"/>
+
+            <?php
+                if ( has_post_thumbnail($page->ID) ) {
+                    echo '<img class="p-3 w-100 img-fluid" src="'.get_the_post_thumbnail($page->ID);
+                }  
+            ?>
+            </div>
+            
+            <div class="col-4 m-auto">
+                <p><?php echo $page->post_title; ?></p>
             </div>
 
             <div class="col-4 m-auto">
-                <p>Lorem ipsum dolor sit</p>
-                <p>Lorem ipsum dolor sit</p>
-                <p>Lorem ipsum dolor sit</p>
+                <p><?php echo $page->post_content; ?></p>
             </div>
+            
+                
+           
+            <?php   
+        } ?>  
 
-            <div class="col-4 m-auto">
-                <p>Lorem ipsum dolor sit</p>
-                <p>Lorem ipsum dolor sit</p>
-                <p>Lorem ipsum dolor sit</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-4 m-auto">
-                <img class=" p-3" src="<?php bloginfo('template_directory');?>/assets/images/champions.jpg"/>
-            </div>
-
-            <div class="col-4 m-auto">
-                <p>Lorem ipsum dolor sit</p>
-                <p>Lorem ipsum dolor sit</p>
-            </div>
-
-            <div class="col-4 m-auto">
-                <p>Lorem ipsum dolor sit</p>
-                <p>Lorem ipsum dolor sit</p>
-            </div>
         </div>
     </div>
 
