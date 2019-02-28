@@ -50,7 +50,7 @@
 
 
         <?php
-            $mypages = get_pages( array( 'child_of' => 32, 'sort_column' => 'post_date', 'sort_order' => 'asc' ) );
+            $mypages = get_pages( array( 'child_of' => 124, 'sort_column' => 'post_date', 'sort_order' => 'asc' ) );
 
             foreach( $mypages as $page ) {		
                 $content = $page->post_content;

@@ -20,12 +20,14 @@ get_header();
         <p><?php the_content(); ?></p>
     </div>
 
-    <div class="row m-auto pt-5">
-        <div class="col">
-            <img class="" src="<?php bloginfo('template_directory');?>/assets/images/gaminghouse.jpg"/>
-        </div>
-        <div class="col">
-        <img class="" src="<?php bloginfo('template_directory');?>/assets/images/coach8.jpg"/>
+    <div class="container-fluid">
+        <div class="row m-auto pt-5">
+            <div class="col">
+                <img class="" src="<?php bloginfo('template_directory');?>/assets/images/gaminghouse.jpg"/>
+            </div>
+            <div class="col">
+            <img class="" src="<?php bloginfo('template_directory');?>/assets/images/coach8.jpg"/>
+            </div>
         </div>
     </div>
 
@@ -45,13 +47,15 @@ get_header();
         } ?>  
     </div>
 
-    <div class="row m-auto w-75 pt-5 pb-5">
-        <div class="col-8">
-            <img class="" src="<?php bloginfo('template_directory');?>/assets/images/coach7.jpg"/>
-        </div>
-        <div class="col-4 m-auto">
-            <img class="" src="<?php bloginfo('template_directory');?>/assets/images/playerArce.jpg"/>
-            <img class="" src="<?php bloginfo('template_directory');?>/assets/images/playerCotoPaco.jpg"/>
+    <div class="container-fluid">
+        <div class="row m-auto w-75 pt-5 pb-5">
+            <div class="col-8">
+                <img class="" src="<?php bloginfo('template_directory');?>/assets/images/coach7.jpg"/>
+            </div>
+            <div class="col-4 m-auto">
+                <img class="" src="<?php bloginfo('template_directory');?>/assets/images/playerArce.jpg"/>
+                <img class="" src="<?php bloginfo('template_directory');?>/assets/images/playerCotoPaco.jpg"/>
+            </div>
         </div>
     </div>
 

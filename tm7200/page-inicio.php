@@ -33,22 +33,22 @@
 		<!--imgHomeGames-->
 		<?php
 
-		$argsIndex = array( 'numberposts' => '4',
+		$argsInicio = array( 'numberposts' => '4',
 		'category' => '41',
-		'order' => 'asc');
+		'order' => 'desc');
 
-		$recent_postsIndex = wp_get_recent_posts( $argsIndex );
+		$recent_postsInicio = wp_get_recent_posts( $argsInicio );
 
-		foreach( $recent_postsIndex as $recentIndex ){
+		foreach( $recent_postsInicio as $recentInicio ){
 
 		?>
 			<div class="col-lg-3 col-md-3 col-xs-6">
 			<?php
-			echo '<img class="m-auto w-100 img-fluid" src="'.get_the_post_thumbnail($recentIndex["ID"]).'';
+			echo '<img class="m-auto w-100 img-fluid" src="'.get_the_post_thumbnail($recentInicio["ID"]).'';
 			?>
 			</div>
 		<?php
-		} wp_reset_postdata();
+		}wp_reset_postdata();
 		?>
 		</div>
 	</div>
@@ -63,7 +63,7 @@
 					</div>
 
 					<div class="col-8 m-auto">
-						<p class="">Team work for the victory</p>
+						<p class="">Trabajo en equipo hasta la victoria</p>
 					</div>
 				</div>
 			</div>
@@ -75,7 +75,7 @@
 					</div>
 
 					<div class="col-8 m-auto">
-						<p>Mutual improvement, to be the best</p>
+						<p>Superación mutua, para ser los mejores</p>
 					</div>
 				</div>
 			</div>
@@ -87,7 +87,7 @@
 					</div>
 
 					<div class="col-8 m-auto">
-						<p>Effort, for thirst to win</p>
+						<p>Esfuerzo, por sed de victoria</p>
 					</div>
 				</div>
 			</div>
@@ -99,18 +99,18 @@
 		<div class="row w-75 m-auto ">
 
 		<?php
-        $argsIndex2 = array( 'numberposts' => '3',
+        $argsInicio2 = array( 'numberposts' => '3',
 		'category' => '43',
 		'order' => 'asc');
 	
-		$recent_postsIndex2 = wp_get_recent_posts( $argsIndex2 );
+		$recent_postsInicio2 = wp_get_recent_posts( $argsInicio2 );
 	
-		foreach( $recent_postsIndex2 as $recentIndex2 ){
+		foreach( $recent_postsInicio2 as $recentInicio2 ){
 
         ?>    
         	<div class="col-lg-4 col-md-4 col-xs-12 m-auto">
 			<?php
-			echo '<img class="m-auto w-100 img-fluid" src="'.get_the_post_thumbnail($recentIndex2["ID"]).'';
+			echo '<img class="m-auto w-100 img-fluid" src="'.get_the_post_thumbnail($recentInicio2["ID"]).'';
 			?>
 			</div>
         <?php   
@@ -123,8 +123,8 @@
 	<div class="">
 
 		<div class="txtButton text-center">
-			<p class="">Would you like to be part of this great family and be victorious?</p>
-			<input name="" id="" class="button" type="button" value="Be one of Us">
+			<p class="">¿Te gustaria formar parte de esta gran familia y ser victorioso?</p>
+			<input name="" id="" class="button" type="button" value="Se uno de nosotros">
 		</div>
 
 		<div class=" p-5 text-center">

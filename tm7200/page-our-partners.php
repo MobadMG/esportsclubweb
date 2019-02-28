@@ -15,10 +15,11 @@ get_header();
     <div class="imgParallax parallaxPartners">
     </div>
 
-    <div class="w-75 m-auto">
+    
+    <div class="w-75 m-auto container-fluid">
         <div class="row">
             <?php
-            $mypages = get_pages( array( 'child_of' => 34, 'sort_column' => 'post_date', 'sort_order' => 'asc' ) );
+            $mypages = get_pages( array( 'child_of' => 15, 'sort_column' => 'post_date', 'sort_order' => 'asc' ) );
 
             foreach( $mypages as $page ) {		
                 $content = $page->post_content;

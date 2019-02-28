@@ -73,7 +73,7 @@ get_header();
                     </div>
                 </div>
             <?php
-            } wp_reset_postdata();
+            }wp_reset_postdata();
             ?> 
             
             
